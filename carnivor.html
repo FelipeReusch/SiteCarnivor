@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+
+<head>
+    <link rel="stylesheet" href="css/styless.css">
+    <title> Carnivor </title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!--css, fecha só depois do form-->
+            <img src="https://cdn.pixabay.com/photo/2021/06/04/10/14/barbecue-6309402_1280.png"
+                alt="Carnivor">
+            <p> Braseiro </p>
+
+            <!-- inicio formulario -->
+            <form action="#" method="post">
+                <!-- secão dados pessoais -->
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+
+                    <label for="endereco">Endereço:</label>
+                    <textarea name="endereco" id="endereco" cols="30" rows="5"></textarea>
+                </fieldset>
+                <!-- secão escolha lanche -->
+                <fieldset>
+                    <legend>Escolha sua Carne</legend>
+                    <select name="lanches" id="lanches">
+                        <option value="">Selecione uma opção</option>
+                        <optgroup label="Carne Bovina">
+                            <option value="Ancho">Ancho</option>
+                            <option value="Chorizo">Chorizo</option>
+                            <option value="Picanha">Picanha</option>
+                            <option value="Costela">Costela</option>
+                            <option value="Ossobuco">Ossobuco</option>
+                        </optgroup>
+                        <optgroup label="Carne de Aves"></optgroup>
+                        <option value="coxa de galinha">Coxinha de Galinha</option>
+                        <option value="peito de pato">Peito de Pato</option>
+                        <option value="avestruz">Avestruz</option>
+                        <option value="Sobrecoxa">Sobrecoxa</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <!--seção opcionais-->
+                <fieldset>
+                    <legend> Ponto da Carne</legend>
+                    <input type="checkbox" name="mal passado" id="mal passado">
+                    <label for="mal passado">Mal Passado</label>
+                    <input type="checkbox" name="ao ponto" id="ao ponto">
+                    <label for="ao ponto"> Ao Ponto</label>
+                    <input type="checkbox" name="bem passado" id="bem passado">
+                    <label for="bem passado">Bem Passado</label>
+                </fieldset>
+
+                <!--seção pagamento-->
+                <fieldset>
+                    <legend>Molhos</legend>
+                    <input type="radio" name="molho" id="barbecue" value="barbecue" checked>
+                    <label for="barbecue">Barbecue</label>
+                    <input type="radio" name="molho" id="chimichurri" value="chimichurri" checked>
+                    <label for="chimichurri">Chimichurri</label>
+                    <input type="radio" name="molho" id="escabeche" value="escabeche" checked>
+                    <label for="escabeche">Escabeche</label>
+                </fieldset>
+
+                <!--seção de agendamento-->
+                <fieldset>
+                    <legend>Agendar pra quando?</legend>
+                    <input type="date" name="data" id="data">
+                </fieldset>
+
+                <!--seção de agendamento-->
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
