@@ -1,15 +1,13 @@
 
-
 body{
     font-family: 'roboto', sans-serif;
-    background-color: rgb(70, 31, 31);
+    background-color:rgb(99, 36, 36)  ;
     color: burlywood;
     font-weight: bolder;
 }
 
-
 main{
-    text-align: center;
+    text-align:center;
     animation: mainAnimation 1s; 
 }
 
